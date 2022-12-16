@@ -11,8 +11,14 @@ class Movie {
     $this->duration = $z;
   }
 
+  public function durationFilter(){
+    if( $this->duration > 120){
+        return "Il film $this->title dura più di 2 ore";
+    }else{
+        return "Il film $this->title dura meno di 2 ore";
+    }
+  }
+
 }
-
-
 
 ?>
